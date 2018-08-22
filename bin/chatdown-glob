@@ -25,6 +25,7 @@ async function runProgram() {
             let writeFile = `${outputDir}/${fileName}.transcript`;
             await fs.ensureFile(writeFile);
             await fs.writeJson(writeFile, activities, { spaces: 2 });
+        }
         catch(e) {
             process.stderr.write(chalk.red(e));
         }
