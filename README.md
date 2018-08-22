@@ -1,5 +1,7 @@
 # Chatdown Glob
 
+> Note: This package has been moved to the [Bot Builder Community Tools](https://github.com/BotBuilderCommunity/botbuilder-community-tools) repository. For all updates, issues, etc. please go there.
+
 Chatdown Glob is a tool for processing multiple [Chatdown](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Chatdown) files in a single command.
 
 ## Installation
