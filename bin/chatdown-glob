@@ -27,16 +27,16 @@ async function runProgram() {
             await fs.writeJson(writeFile, activities, { spaces: 2 });
         }
         catch(e) {
-            process.stderr.write(chalk.red(e));
+            process.stderr.write(`${chalk.red(e)}\n`);
         }
     }
 }
 
 runProgram()
     .then(() => {
-        process.stdout.write(chalk.green("Successfully wrote transcript files."));
+        process.stdout.write(chalk.green("Successfully wrote transcript files.\n"));
         process.exit(0);
     })
     .catch(e => {
-        process.stderr.write(chalk.red(e));
+        process.stderr.write(`${chalk.red(e)}\n`);
     });
