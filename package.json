@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BotBuilderCommunity/botbuilder-config.git"
+    "url": "git+https://github.com/BotBuilderCommunity/chatdown-glob.git"
   },
   "keywords": [
     "bots",
@@ -24,9 +24,9 @@
   "author": "Michael Szul <michael@szul.us>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BotBuilderCommunity/botbuilder-config/issues"
+    "url": "https://github.com/BotBuilderCommunity/chatdown-glob/issues"
   },
-  "homepage": "https://github.com/BotBuilderCommunity/botbuilder-config#readme",
+  "homepage": "https://github.com/BotBuilderCommunity/chatdown-glob#readme",
   "dependencies": {
     "blob": "0.0.4",
     "chalk": "^2.4.1",
