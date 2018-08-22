@@ -1,6 +1,6 @@
 {
   "name": "chatdown-glob",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "CLI utility for processing multiple chatdown files at once.",
   "main": "./lib/index.js",
   "scripts": {
