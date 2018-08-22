@@ -14,7 +14,11 @@ async function runProgram() {
     args.outputDir = (args._.length > 1) ?  args._[1] : "./";
     let files = glob.sync(args.inputDir, { "ignore": ["**/node_modules/**"] });
     for(let i = 0; i < files.length; i++) {
-        let fileName = files[i].substr(files[i].lastIndexOf("/")).split(".")[0];
+        let fileName = files[i];
+        if(files[i].lastIndexOf("/") != -1) {
+            fileName = files[i].substr(files[i].lastIndexOf("/"))
+        }
+        fileName = fileName.split(".")[0];
         let activities = await chatdown(txt.readSync(files[i]));
         let outputDir = (args.outputDir.substr(0, 2) === "./") ? path.resolve(process.cwd(), args.outputDir.substr(2)) : args.outputDir;
         let writeFile = `${outputDir}/${fileName}.transcript`;
